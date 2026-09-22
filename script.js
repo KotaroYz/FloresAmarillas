@@ -109,18 +109,6 @@ function createSparkles(cx, cy) {
     }
 }
 
-function createHeart() {
-    const heart = document.createElement('div');
-    heart.classList.add('heart');
-    heart.textContent = ['💛', '🌻', '✨', '💛'][Math.floor(Math.random() * 4)];
-    heart.style.left = Math.random() * 100 + 'vw';
-    heart.style.fontSize = (12 + Math.random() * 18) + 'px';
-    heart.style.animationDuration = (8 + Math.random() * 8) + 's';
-    document.getElementById('heartsBg').appendChild(heart);
-
-    setTimeout(() => heart.remove(), 16000);
-}
-
 function typeMessage(text, el, speed = 60) {
     el.textContent = '';
     let i = 0;
